@@ -279,8 +279,8 @@ body {
 .rating {
   background-color: var(--color-background-100);
   border-radius: 0.9rem;
-  padding: 2rem 2.4rem;
-  margin-bottom: 0.8rem;
+    padding: 2rem 2.4rem;
+      margin-bottom: 0.8rem;
   font-weight: 600;
   display: flex;
   flex-direction: column;
@@ -380,54 +380,125 @@ body {
 }
 
 
-@media (min-width: 576px) {
-  .box {
-    width: 90%;
-    max-width: 42rem;
+/* Mobile */
+@media (max-width: 790px) {
+  .nav-bar {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
   }
-}
+        .logo h1 {
+          font-size: 1.2rem;
+        }
+    
+        .num-results {
+          font-size: 1.2rem;
+        }
 
-@media (min-width: 768px) {
-  body {
-      padding: 4.8rem;
-      /* Increase padding for larger screens */
+
+  .logo {
+    justify-content: center;
+  }
+    .rating {
+      padding: 1rem;
     }
   
-    .nav-bar {
-      grid-template-columns: repeat(3, 1fr);
-      /* Adjust grid columns */
-      padding: 0 6.4rem;
-      /* Increase padding for larger screens */
-      flex-wrap: wrap;
-        flex-direction: row;
+    .rating h3 {
+      font-size: 1.2rem;
     }
-/* 
+  
+    .star-rating {
+      margin-bottom: 0.5rem;
+    }
+  
+    .btn-add {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+     .search {
+       width: 100%;
+       padding: 0.4rem 0.8rem;
+       font-size: 1rem;
+     }
+
   .main {
-   
-  } */
+    flex-direction: column;
+  }
 
   .box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .details img {
+    width: 100%;
+  }
+    .details header {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .details img {
+      width: 100%;
+    }
+  
+    .details-overview h2 {
+      font-size: 1.8rem;
+    }
+         .summary {
+           padding: 1rem;
+         }
+    
+         .summary h2 {
+           font-size: 1.4rem;
+         }
+    
+         .summary div {
+           flex-direction: column;
+           gap: 0.5rem;
+         }
+    
+         .summary p {
+           font-size: 1.2rem;
+         }
+} 
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .nav-bar {
+    padding: 0 2rem;
+  }
+
+  .main {
+    gap: 1rem;
+  }
+
+  /* .box {
+    width: 45%;
+  } */
+
+  .details img {
     width: 45%;
   }
 
 }
 
+/* Desktop */
 @media (min-width: 992px) {
+
+  .main {
+    gap: 2rem;
+  }
 
   .box {
     width: 40%;
   }
 
-}
-
-@media (min-width: 1200px) {
-
-  .main {
-    gap: 4rem;
-  }
-
-  .box {
-    width: 35%;
+  .details img {
+    width: 30%;
   }
 
 }
