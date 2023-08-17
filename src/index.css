@@ -431,19 +431,17 @@ body {
     height: 100%;
   }
 
-  .details img {
-    width: 100%;
-  }
+
     .details header {
       flex-direction: column;
       align-items: center;
       gap: 1rem;
     }
   
-    .details img {
+    /* .details img {
       width: 100%;
     }
-  
+   */
     .details-overview h2 {
       font-size: 1.8rem;
     }
@@ -463,6 +461,10 @@ body {
          .summary p {
            font-size: 1.2rem;
          }
+
+        .details img {
+          width: 100%;
+        }
 } 
 
 /* Tablet */
@@ -476,13 +478,11 @@ body {
     gap: 1rem;
   }
 
-  /* .box {
+   /* .box {
     width: 45%;
-  } */
+  }  */
 
-  .details img {
-    width: 45%;
-  }
+
 
 }
 
@@ -498,8 +498,8 @@ body {
   }
 
   .details img {
-    width: 30%;
-  }
+    width: 40%;
+  } 
 
 }
 /*
