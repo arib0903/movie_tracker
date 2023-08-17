@@ -1,7 +1,7 @@
 function Movie({ movie, onSelectedMovie }) {
   return (
     <li onClick={() => onSelectedMovie(movie.imdbID)}>
-      <img src={movie.Poster} />
+      <img src={movie.Poster} alt="img" />
       <h3>{movie.Title}</h3>
       <div>
         <p>

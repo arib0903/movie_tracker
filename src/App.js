@@ -14,6 +14,7 @@ import WatchedSummary from "./rightBoxContent/WatchedSummary";
 import WatchedMoviesList from "./rightBoxContent/WatchedMoviesList";
 
 import LoadingScreen from "./loadingPage/LoadingScreen";
+import Footer from "./footer/Footer";
 
 const tempMovieData = [
   {
@@ -153,6 +154,7 @@ export default function App() {
           )}
         </BoxComp>
       </Main>
+      <Footer />
     </>
   );
 }
